@@ -1,7 +1,5 @@
 package com.example.andykhuu.apcomputerscienceprep;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -22,16 +20,15 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //Message button
-        FloatingActionButton message = (FloatingActionButton) findViewById(R.id.fab);
-        message.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Insert stuff so button is mapped to something
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
 
@@ -46,9 +43,6 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
-    /**
-     * Closes nav view if back key is pressed from phone
-     */
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -59,11 +53,6 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    /**
-     * Creates the content that is displayed when top right key is pressed
-     * @param menu
-     * @return
-     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -71,43 +60,30 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    /**
-     * Handles what happens when things within action bar is pressed
-     * @param item
-     * @return
-     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //Currently mapped when selected to settings activity page
+        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            launchSettings(this);
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * Method to open up settings activity page
-     * @param c
-     */
-    public static void launchSettings(Context c){
-        Intent i = new Intent(c,SettingsActivity.class);
-        c.startActivity(i);
-    }
-
-    /**
-     * Handles what happens when each item in nav view is pressed
-     * @param item
-     * @return
-     */
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_unit1) {
+        if (id == R.id.nav_unit0) {
+            // Handle the camera action
+        } else if (id == R.id.nav_unit1) {
 
         } else if (id == R.id.nav_unit2) {
 
@@ -115,7 +91,16 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_unit4) {
 
+        } else if (id == R.id.nav_unit5) {
+
+        } else if (id == R.id.nav_unit6) {
+
+        } else if (id == R.id.nav_share) {
+
+        } else if (id == R.id.nav_send) {
+
         }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
