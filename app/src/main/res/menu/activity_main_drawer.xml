@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <!--Different AP CS Unit listings, This is called by activity main as part of navigation view-->
+    <!--Different AP CS Units listings, This is called by activity main as part of navigation view-->
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_intro"
             android:icon="@drawable/ic_menu_camera"
             android:title="What is Computer Science" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_unit1"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Unit 1: blah blah" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_unit2"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Unit 2: more blah blah" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_unit3"
             android:icon="@drawable/ic_menu_manage"
             android:title="Unit 3: more blah blah " />
         <item
-            android:id="@+id/nav_small"
+            android:id="@+id/nav_unit4"
             android:title="Unit 4: dfal"
             />
 
