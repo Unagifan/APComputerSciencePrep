@@ -98,7 +98,6 @@ public class MainActivity extends AppCompatActivity
                 Intent i = new Intent(c,SettingsActivity.class);
                 c.startActivity(i);
             }
-
     /**
      * Handles what happens when each item in nav view is pressed
      * @param item
