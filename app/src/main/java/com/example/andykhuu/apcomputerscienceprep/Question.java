@@ -10,7 +10,6 @@ import java.io.File;
 
 public class Question {
 
-    private File unit;
     private String question;
     private String answer1;
     private String answer2;
@@ -18,7 +17,7 @@ public class Question {
     private String answer4;
     private String answer5;
 
-    public Question(File file){
+    public Question(){
 
     }
 }

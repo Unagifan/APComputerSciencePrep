@@ -110,7 +110,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_unit0) {
-            // Handle the camera action
+            Intent i = new Intent(this,UnitActivity.class);
+            i.putExtra("UNITID",0);
+            startActivity(i);
         } else if (id == R.id.nav_unit1) {
 
         } else if (id == R.id.nav_unit2) {
