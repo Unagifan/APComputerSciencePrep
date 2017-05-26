@@ -109,27 +109,34 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_unit0) {
-            Intent i = new Intent(this,UnitActivity.class);
-            i.putExtra("UNITID",0);
-            startActivity(i);
-        } else if (id == R.id.nav_unit1) {
+        Intent i = new Intent(this,UnitActivity.class);
 
-        } else if (id == R.id.nav_unit2) {
-
-        } else if (id == R.id.nav_unit3) {
-
-        } else if (id == R.id.nav_unit4) {
-
-        } else if (id == R.id.nav_unit5) {
-
-        } else if (id == R.id.nav_unit6) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        //Depending on what unit was pressed, start the UnitActivity and pass it a UNITID in order
+        //to have it differentiate what to actuate
+        switch (id) {
+            case R.id.nav_unit0:
+                i.putExtra("UNITID", 0);
+                break;
+            case R.id.nav_unit1:
+                i.putExtra("UNITID", 1);
+                break;
+            case R.id.nav_unit2:
+                i.putExtra("UNITID", 2);
+                break;
+            case R.id.nav_unit3:
+                i.putExtra("UNITID", 3);
+                break;
+            case R.id.nav_unit4:
+                i.putExtra("UNITID", 4);
+                break;
+            case R.id.nav_unit5:
+                i.putExtra("UNITID", 5);
+                break;
+            case R.id.nav_unit6:
+                i.putExtra("UNITID", 6);
+                break;
         }
+        startActivity(i);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
