@@ -40,9 +40,7 @@ public class Question {
         return answer2;
     }
 
-    public String getAnswer3(){
-        return answer3;
-    }
+    public String getAnswer3(){return answer3;}
 
     public String getAnswer4(){
         return answer4;
