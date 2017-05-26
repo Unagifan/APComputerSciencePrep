@@ -3,25 +3,33 @@ package com.example.andykhuu.apcomputerscienceprep;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import java.io.File;
+import java.util.Scanner;
+
 /**
  * Created by frk_alkhuu on 5/25/2017.
  */
 
 public class UnitActivity extends AppCompatActivity {
 
-    private int currentUnit;
+    private int currentUnitId;
+
+    private File currentUnit;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.unitlayout_main);
 
-        currentUnit = (int) getIntent().getIntExtra("UNITID", 0);
+        //Get the current unit needed
+        currentUnitId = getIntent().getIntExtra("UNITID", 0);
 
-        switch (currentUnit) {
+        switch (currentUnitId) {
             case 0:
+                currentUnit = new File("res/QuestionsFile/TestFile.txt");
+                break;
             case 1:
-                System.out.println();
                 break;
             case 2:
                 break;
@@ -30,5 +38,6 @@ public class UnitActivity extends AppCompatActivity {
             case 4:
                 break;
         }
+        Scanner scanner = new Scanner(currentUnit);
     }
 }
