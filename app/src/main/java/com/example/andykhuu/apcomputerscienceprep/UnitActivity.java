@@ -15,6 +15,9 @@ import java.util.List;
 
 /**
  * Created by frk_alkhuu on 5/25/2017.
+ * This activity controls all the functions inside the unit page
+ * Based off the unit pressed, read the related unit text file and generate a list of questions
+ * Maps to Question Activity which handles actual quizzing
  */
 
 public class UnitActivity extends AppCompatActivity {
