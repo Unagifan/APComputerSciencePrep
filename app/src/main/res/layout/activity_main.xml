@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--This is the layout page for the default main activity when nav view is opened-->
-<!--This includes the navigation bar on the right and the tool bar-->
+<!--This includes the navigation bar on the left and the tool bar-->
 <!--This xml file includes app bar which includes content main in order for
  -everything to run seemlessly-->
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
