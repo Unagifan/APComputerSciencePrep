@@ -1,7 +1,10 @@
 package com.example.andykhuu.apcomputerscienceprep;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -40,9 +43,9 @@ public class UnitActivity extends AppCompatActivity {
         questions = new ArrayList<>();
 
         //From unitData, convert the given string into question objects and put it into a list of questions.
-        for(int i = 2; i < unitData.size()-1; i+=6){
+        for(int i = 2; i < unitData.size()-1; i+=7){
             Question temp = new Question(unitData.get(i),unitData.get(i+1),unitData.get(i+2)
-                    ,unitData.get(i+3),unitData.get(i+4),unitData.get(i+5));
+                    ,unitData.get(i+3),unitData.get(i+4),unitData.get(i+5),Integer.parseInt(unitData.get(i+6)));
             questions.add(temp);
         }
         generateLayout();
@@ -98,10 +101,11 @@ public class UnitActivity extends AppCompatActivity {
     }
 
     /**
-     *Generate a array of strings depending on the number of questions in that unit. Each string
-     *is used to mark each specific question of the list.
+     *Map the questions to question activity and pass in the related question object
+     * to question activity
      */
-    private void createListofQuestions(){
+    private void designListView(){
+        //determine how many questions there are and map them to the unit_layout's listview
         numberOfQuestions = new String[questions.size()];
         for(int i = 0; i < numberOfQuestions.length;i++){
             numberOfQuestions[i] = "Question " + i;
@@ -110,6 +114,18 @@ public class UnitActivity extends AppCompatActivity {
         ArrayAdapter<String> num = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,numberOfQuestions);
         ListView listView = (ListView) findViewById(R.id.QuestionsList);
         listView.setAdapter(num);
+
+        //Map Listview's questions to question view
+        listView.setOnItemClickListener()(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> a, View v, int position,
+                                    long id) {
+
+                Intent intent = new Intent(UnitActivity.this, QuestionActivity.class);
+
+                startActivity(intent);
+            }
+        });
     }
 
     /**
@@ -130,9 +146,6 @@ public class UnitActivity extends AppCompatActivity {
         //Set the unit description
         TextView description = (TextView) findViewById(R.id.Description);
         description.setText(unitDescription);
-
-        //determine how many questions there are and map them to the layout
-        createListofQuestions();
     }
 }
 

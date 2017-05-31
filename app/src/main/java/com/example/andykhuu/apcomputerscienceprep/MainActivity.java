@@ -86,7 +86,6 @@ public class MainActivity extends AppCompatActivity
             launchSettings(this);
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
