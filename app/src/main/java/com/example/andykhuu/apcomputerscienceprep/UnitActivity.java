@@ -2,6 +2,7 @@ package com.example.andykhuu.apcomputerscienceprep;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -116,16 +117,17 @@ public class UnitActivity extends AppCompatActivity {
         listView.setAdapter(num);
 
         //Map Listview's questions to question view
-        listView.setOnItemClickListener()(new OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> a, View v, int position,
-                                    long id) {
-
-                Intent intent = new Intent(UnitActivity.this, QuestionActivity.class);
-
-                startActivity(intent);
-            }
-        });
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//
+//            @Override
+//            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+//                Question temp = questions.get(position);
+//                Intent i = new Intent(UnitActivity.this,QuestionActivity.class);
+//                //Pass question object into question activity
+//                i.putExtra("QUESTION", temp);
+//                startActivity(i);
+//            }
+//        });
     }
 
     /**
@@ -146,6 +148,8 @@ public class UnitActivity extends AppCompatActivity {
         //Set the unit description
         TextView description = (TextView) findViewById(R.id.Description);
         description.setText(unitDescription);
+
+        designListView();
     }
 }
 
