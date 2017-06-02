@@ -1,5 +1,6 @@
 package com.example.andykhuu.apcomputerscienceprep;
 
+import android.os.Parcelable;
 import android.widget.TextView;
 
 import java.io.File;
@@ -10,48 +11,31 @@ import java.io.File;
  * Hypothetically from the text file this should get and contain all the necessary contents
  * to make a single question work.
  * 1 Question String
- * 5 Answer Strings
+ * A Array of Strings which contains the answers
+ * A integer which is the index of the correct answer
  */
 
 public class Question {
 
     private String question;
-    private String answer1;
-    private String answer2;
-    private String answer3;
-    private String answer4;
-    private String correctAnswer;
+    private String[] answers = new String[5];
+    private int correctAnswerIndex;
 
     public Question(String question, String answer1, String answer2,
                     String answer3, String answer4,
-                    String correctAnswer){
+                    String answer5, int correctAnswerIndex){
         this.question = question;
-        this.answer1 = answer1;
-        this.answer2 = answer2;
-        this.answer3 = answer3;
-        this.answer4 = answer4;
-        this.correctAnswer = correctAnswer;
+        this.answers = new String[]{answer1,answer2,answer3,answer4,answer5};
+        this.correctAnswerIndex = correctAnswerIndex;
     }
 
     public String getQuestion(){
         return question;
     }
 
-    public String getAnswer1(){
-        return answer1;
-    }
+    public String[] getAnswers(){ return answers;}
 
-    public String getAnswer2(){
-        return answer2;
-    }
-
-    public String getAnswer3(){return answer3;}
-
-    public String getAnswer4(){
-        return answer4;
-    }
-
-    public String getCorrectAnswer(){
-        return correctAnswer;
+    public int getCorrectAnswer(){
+        return correctAnswerIndex;
     }
 }
