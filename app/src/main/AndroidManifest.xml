@@ -27,6 +27,9 @@
         <activity
             android:name=".UnitActivity"
             android:label="Unit"/>
+        <activity
+            android:name=".QuestionActivity"
+            android:label="Question"/>
 
     </application>
 
