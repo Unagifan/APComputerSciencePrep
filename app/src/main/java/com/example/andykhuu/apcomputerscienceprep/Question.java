@@ -40,6 +40,21 @@ public class Question implements Parcelable {
         return correctAnswerIndex;
     }
 
+    /**
+     * Creates a easy way to debug and see a question object
+     * @return a String which prints out the contents of a question
+     */
+    @Override
+    public String toString(){
+        return "Question: " + question + "\n" +
+        "Answer 1: " + answers[0] + "\n" +
+        "Answer 2: " + answers[1] + "\n" +
+        "Answer 3: " + answers[2] + "\n" +
+        "Answer 4: " + answers[3] + "\n" +
+        "Answer 5: " + answers[4] + "\n" +
+        "Correct Answer Index: " + correctAnswerIndex;
+    }
+
     @Override
     //Nothing special right here due to no custom objects
     public int describeContents(){
