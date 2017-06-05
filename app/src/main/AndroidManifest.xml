@@ -30,6 +30,10 @@
         <activity
             android:name=".QuestionActivity"
             android:label="Question"/>
+        <activity
+            android:name=".SolutionActivity"
+            android:label="Solution"
+            />
 
     </application>
 
