@@ -1,5 +1,6 @@
 package com.example.andykhuu.apcomputerscienceprep;
-
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //Message button
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +44,9 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
-
+    /**
+     * Closes nav view if back key is pressed from phone
+     */
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -53,6 +57,11 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    /**
+     * Creates the content that is displayed when top right key is pressed
+     * @param menu
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -60,6 +69,11 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    /**
+     * Handles what happens when things within action bar is pressed
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -67,33 +81,61 @@ public class MainActivity extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
+        //Currently mapped when selected to settings activity page
         if (id == R.id.action_settings) {
+            launchSettings(this);
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * Method to open up settings activity page
+     * @param c
+     */
+     public static void launchSettings(Context c){
+                Intent i = new Intent(c,SettingsActivity.class);
+                c.startActivity(i);
+            }
+    /**
+     * Handles what happens when each item in nav view is pressed
+     * @param item
+     * @return
+     */
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        Intent i = new Intent(this,UnitActivity.class);
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        //Depending on what unit was pressed, start the UnitActivity and pass it a UNITID in order
+        //to have it differentiate what to actuate
+        switch (id) {
+            case R.id.nav_unit0:
+                i.putExtra("UNITID", 0);
+                break;
+            case R.id.nav_unit1:
+                i.putExtra("UNITID", 1);
+                break;
+            case R.id.nav_unit2:
+                i.putExtra("UNITID", 2);
+                break;
+            case R.id.nav_unit3:
+                i.putExtra("UNITID", 3);
+                break;
+            case R.id.nav_unit4:
+                i.putExtra("UNITID", 4);
+                break;
+            case R.id.nav_unit5:
+                i.putExtra("UNITID", 5);
+                break;
+            case R.id.nav_unit6:
+                i.putExtra("UNITID", 6);
+                break;
         }
+        startActivity(i);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

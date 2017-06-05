@@ -3,24 +3,32 @@
     <!--Different AP CS Unit listings, This is called by activity main as part of navigation view-->
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_unit0"
             android:icon="@drawable/ic_menu_camera"
-            android:title="What is Computer Science" />
+            android:title="Unit 0: Basics" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_unit1"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Unit 1: blah blah" />
+            android:title="Unit 1: Methods" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_unit2"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Unit 2: more blah blah" />
+            android:title="Unit 2: Objects" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_unit3"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Unit 3: more blah blah " />
+            android:title="Unit 3: Control Structures " />
         <item
-            android:id="@+id/nav_small"
-            android:title="Unit 4: dfal"
+            android:id="@+id/nav_unit4"
+            android:title="Unit 4: Arrays and Lists"
+            />
+        <item
+            android:id="@+id/nav_unit5"
+            android:title="Unit 5: Inheritance, Polymorphism"
+            />
+        <item
+            android:id="@+id/nav_unit6"
+            android:title="Unit 6: Searching, Sorting, Recursion"
             />
 
     </group>
