@@ -1,16 +1,16 @@
 Unit 2:
 Objects
-Q1.
-A1.
-A2.
-A3.
-A4.
-A5.
-4
-Q2.
-A1.
-A2.
-A3.
-A4.
-A5.
+An object is an instance of a __________.
+A1. program
+A2. idea
+A3. method
+A4. data
+A5. class
+5
+________ is invoked to create an object.
+A1. A constructor
+A2. The main method
+A3. A method with a return type
+A4. A method call
+A5. A return
 1

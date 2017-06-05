@@ -1,16 +1,16 @@
 Unit 5:
 Inheritance, Polymorphism
-Q1.
-A1.
-A2.
-A3.
-A4.
-A5.
+Which of these keyword must be used to inherit a class?
+A1. super
+A2. this
+A3. extent
+A4. extendo
+A5. extends
 5
-Q2.
-A1.
-A2.
-A3.
-A4.
-A5.
+Which of these can be overloaded?
+A1. Methods
+A2. Constructors
+A3. All of the above
+A4. Strings
+A5. None of the mentioned
 3
