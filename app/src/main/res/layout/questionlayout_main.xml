@@ -10,36 +10,27 @@
             android:textSize="30sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        <View
+            style = "@style/Divider"/>
         <TextView
             android:id="@+id/answer0"
             android:layout_below="@id/question"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style = "@style/answerStyle"
-            />
+            style = "@style/answerStyle" />
         <TextView
             android:id="@+id/answer1"
             android:layout_below="@id/answer0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             style = "@style/answerStyle"/>
         <TextView
             android:id="@+id/answer2"
             android:layout_below="@id/answer1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             style = "@style/answerStyle"/>
         <TextView
             android:id="@+id/answer3"
             android:layout_below="@id/answer2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             style = "@style/answerStyle"/>
         <TextView
             android:id="@+id/answer4"
             android:layout_below="@id/answer3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             style = "@style/answerStyle"/>
 
         <Button
@@ -49,6 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_centerInParent="true"
             android:text="Submit" />
     </RelativeLayout>
 
