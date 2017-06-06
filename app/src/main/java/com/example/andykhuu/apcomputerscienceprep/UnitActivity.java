@@ -117,17 +117,17 @@ public class UnitActivity extends AppCompatActivity {
         listView.setAdapter(num);
 
         //Map Listview's questions to question view
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//
-//            @Override
-//            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
-//                Question temp = questions.get(position);
-//                Intent i = new Intent(UnitActivity.this,QuestionActivity.class);
-//                //Pass question object into question activity
-//                i.putExtra("QUESTION", temp);
-//                startActivity(i);
-//            }
-//        });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+                Question temp = questions.get(position);
+                Intent i = new Intent(UnitActivity.this,QuestionActivity.class);
+                //Pass question object into question activity
+                i.putExtra("QUESTION",  temp);
+                startActivity(i);
+            }
+        });
     }
 
     /**
