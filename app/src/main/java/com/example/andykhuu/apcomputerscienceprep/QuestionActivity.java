@@ -85,11 +85,12 @@ public class QuestionActivity extends AppCompatActivity {
                 Intent i = new Intent(QuestionActivity.this, SolutionActivity.class);
                 if(selected ==  correctAnswer){
                     i.putExtra("CORRECT",true);
+                    startActivity(i);
                 }
-                else if(selected != correctAnswer){
+                else if(selected >= 0 && selected <= 4){
                     i.putExtra("CORRECT",false);
+                    startActivity(i);
                 }
-                startActivity(i);
             }
         });
 
