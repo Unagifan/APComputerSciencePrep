@@ -29,7 +29,7 @@ public class QuestionActivity extends AppCompatActivity {
         selected = -1;
         //Retrieve Question Object
         QUESTION = getIntent().getParcelableExtra("QUESTION");
-        //Determine which textView contains the correct answer
+        //Determine which feedbackText contains the correct answer
         correctAnswer = QUESTION.getCorrectAnswer();
 
         TextView question = (TextView) findViewById(R.id.question);
