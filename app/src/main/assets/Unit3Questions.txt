@@ -1,16 +1,16 @@
 Unit 3:
 Control Structures
 Each pass through a loop is called a/an
-A1. enumeration
-A2. culmination
-A3. pass through
-A4. iteration
-A5. loop
-4
-Which looping process checks the test condition at the end of the loop?
-A1. for
-A2. while
-A3. do-while
-A4. no looping process checks the test condition at the end
-A5. if loops
+A0. enumeration
+A1. culmination
+A2. pass through
+A3. iteration
+A4. loop
 3
+Which looping process checks the test condition at the end of the loop?
+A0. for
+A1. while
+A2. do-while
+A3. no looping process checks the test condition at the end
+A4. if loops
+2

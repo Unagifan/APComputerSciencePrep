@@ -1,16 +1,16 @@
 Unit 0:
 Computer Science Basics
 __________ is the brain of a computer.
-A1. Hardware
-A2. CPU
-A3. Memory
-A4. Disk
-A5. Power Button
-2
+A0. Hardware
+A1. CPU
+A2. Memory
+A3 Disk
+A4. Power Button
+1
 ___________ translates high-level language program into machine language program.
-A1. An assembler
-A2. A compiler
-A3. CPU
-A4. The operating system
-A5. A programmer
-2
+A0. An assembler
+A1. A compiler
+A2. CPU
+A3. The operating system
+A4. A programmer
+1
