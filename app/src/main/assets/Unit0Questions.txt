@@ -1,37 +1,17 @@
 Unit 0:
 Computer Science is blah blah blah, insert filler here jkfljasldfkjkalsdfklasjdflk ajsdkl fjalsdkfj s
-Q1.
-A1.
-A2.
-A3.
-A4.
-A5.
+__________ is the brain of a computer.
+A1. Hardware
+A2. CPU
+A3. Memory
+A4. Disk
+A5. Power Button
 2
-Q2.
-A1.
-A2.
-A3.
-A4.
-A5.
-5
-Q3.
-A1.
-A2.
-A3.
-A4.
-A5.
-1
-Q4.
-A1.
-A2.
-A3.
-A4.
-A5.
+___________ translates high-level language program into machine language program.
+A1. An assembler
+A2. A compiler
+A3. CPU
+A4. The operating system
+A5. A programmer
 2
-Q5.
-A1.
-A2.
-A3.
-A4.
-A5.
-2
+
