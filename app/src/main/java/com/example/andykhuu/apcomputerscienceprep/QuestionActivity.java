@@ -30,6 +30,12 @@ public class QuestionActivity extends AppCompatActivity {
         //Determine which textView contains the correct answer
         correctAnswer = QUESTION.getCorrectAnswer();
 
+        answerSelection();
+
+
+    }
+
+    private void answerSelection(){
         TextView question = (TextView) findViewById(R.id.question);
         question.setText(QUESTION.getQuestion());
 
@@ -93,7 +99,6 @@ public class QuestionActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
 }
 

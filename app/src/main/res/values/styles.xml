@@ -23,13 +23,21 @@
         <item name = "android:background"> @drawable/border </item>
         <item name = "android:layout_width"> wrap_content </item>
         <item name = "android:layout_height"> 50dp </item>
+        <item name = "android:paddingTop">10dp</item>
     </style>
 
-    <!--Basic black divider-->
-    <style name="Divider">
+    <!--Basic gray divider between answer choices-->
+    <style name="answerDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">#B2B0B0</item>
+    </style>
+
+    <!--Thin Divider between question and answers-->
+    <style name="questionAnswerDivider">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">2dp</item>
-        <item name="android:background">#000000</item>
+        <item name="android:background">#2E2828</item>
     </style>
 
 </resources>

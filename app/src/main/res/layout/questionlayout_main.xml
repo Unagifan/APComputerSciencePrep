@@ -10,32 +10,58 @@
             android:textSize="30sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
         <View
-            style = "@style/Divider"/>
+            style = "@style/questionAnswerDivider"
+            android:layout_below="@id/question"/>
+
         <TextView
             android:id="@+id/answer0"
             android:layout_below="@id/question"
             style = "@style/answerStyle" />
+
+        <View
+            style = "@style/answerDivider"
+            android:layout_below="@id/answer0"/>
+
         <TextView
             android:id="@+id/answer1"
             android:layout_below="@id/answer0"
             style = "@style/answerStyle"/>
+
+        <View
+            style = "@style/answerDivider"
+            android:layout_below="@id/answer1"/>
+
         <TextView
             android:id="@+id/answer2"
             android:layout_below="@id/answer1"
             style = "@style/answerStyle"/>
+
+        <View
+            style = "@style/answerDivider"
+            android:layout_below="@id/answer2"/>
         <TextView
             android:id="@+id/answer3"
             android:layout_below="@id/answer2"
             style = "@style/answerStyle"/>
+
+        <View
+            style = "@style/answerDivider"
+            android:layout_below="@id/answer3"/>
         <TextView
             android:id="@+id/answer4"
             android:layout_below="@id/answer3"
             style = "@style/answerStyle"/>
 
+        <View
+            style = "@style/answerDivider"
+            android:layout_below="@id/answer4"/>
+
         <Button
             android:id="@+id/submit"
             android:textSize="15sp"
+            android:paddingTop="10dp"
             android:layout_below="@id/answer4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
