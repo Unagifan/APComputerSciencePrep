@@ -73,19 +73,19 @@ public class UnitActivity extends AppCompatActivity {
                     is = getResources().getAssets().open("Unit1Questions.txt");
                     break;
                 case 2:
-                    is = getResources().getAssets().open("Unit0Questions.txt");
+                    is = getResources().getAssets().open("Unit2Questions.txt");
                     break;
                 case 3:
-                    is = getResources().getAssets().open("Unit0Questions.txt");
+                    is = getResources().getAssets().open("Unit3Questions.txt");
                     break;
                 case 4:
-                    is = getResources().getAssets().open("Unit0Questions.txt");
+                    is = getResources().getAssets().open("Unit4Questions.txt");
                     break;
                 case 5:
-                    is = getResources().getAssets().open("Unit0Questions.txt");
+                    is = getResources().getAssets().open("Unit5Questions.txt");
                     break;
                 case 6:
-                    is = getResources().getAssets().open("Unit0Questions.txt");
+                    is = getResources().getAssets().open("Unit6Questions.txt");
                     break;
                 default:
                     is = getResources().getAssets().open("Unit0Questions.txt");
