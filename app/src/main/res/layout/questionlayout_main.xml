@@ -1,39 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/question"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp" />
 
-    <TextView
-        android:id="@+id/question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/answer0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/border"/>
-    <TextView
-        android:id="@+id/answer1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/answer2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/answer3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/answer4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <View
+            style = "@style/questionAnswerDivider"
+            android:layout_below="@id/question"/>
 
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Submit" />
+        <TextView
+            android:id="@+id/answer0"
+            android:layout_below="@id/question"
+            style = "@style/answerStyle" />
 
-</LinearLayout>
+        <View
+            style = "@style/answerDivider"
+            android:layout_below="@id/answer0"/>
+
+        <TextView
+            android:id="@+id/answer1"
+            android:layout_below="@id/answer0"
+            style = "@style/answerStyle"/>
+
+        <View
+            style = "@style/answerDivider"
+            android:layout_below="@id/answer1"/>
+
+        <TextView
+            android:id="@+id/answer2"
+            android:layout_below="@id/answer1"
+            style = "@style/answerStyle"/>
+
+        <View
+            style = "@style/answerDivider"
+            android:layout_below="@id/answer2"/>
+        <TextView
+            android:id="@+id/answer3"
+            android:layout_below="@id/answer2"
+            style = "@style/answerStyle"/>
+
+        <View
+            style = "@style/answerDivider"
+            android:layout_below="@id/answer3"/>
+        <TextView
+            android:id="@+id/answer4"
+            android:layout_below="@id/answer3"
+            style = "@style/answerStyle"/>
+
+        <View
+            style = "@style/answerDivider"
+            android:layout_below="@id/answer4"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:layout_below="@id/answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Submit" />
+    </RelativeLayout>
+
+
+</ScrollView>
