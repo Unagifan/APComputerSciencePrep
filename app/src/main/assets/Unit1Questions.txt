@@ -1,16 +1,16 @@
 Unit 1:
 Methods
 The main method header is written as:
-A1. public static void main(string[] args)
-A2. public static void Main(String[] args)
-A3. public static void main(String[] args)
-A4. public static main(String[] args)
-A5. public void main(String[] args)
-3
-Which of the following statements is correct?
-A1. Every line in a program must end with a semicolon.
-A2. Every statement in a program must end with a semicolon.
-A3. Every comment line must end with a semicolon.
-A4. Every method must end with a semicolon.
-A5. Every class must end with a semicolon.
+A0. public static void main(string[] args)
+A1. public static void Main(String[] args)
+A2. public static void main(String[] args)
+A3. public static main(String[] args)
+A4. public void main(String[] args)
 2
+Which of the following statements is correct?
+A0. Every line in a program must end with a semicolon.
+A1. Every statement in a program must end with a semicolon.
+A2. Every comment line must end with a semicolon.
+A3. Every method must end with a semicolon.
+A4. Every class must end with a semicolon.
+1
