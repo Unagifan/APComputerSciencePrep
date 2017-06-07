@@ -25,9 +25,11 @@ public class QuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.questionlayout_main);
 
+        //Set selected to an unused value
+        selected = -1;
         //Retrieve Question Object
         QUESTION = getIntent().getParcelableExtra("QUESTION");
-        //Determine which textView contains the correct answer
+        //Determine which feedbackText contains the correct answer
         correctAnswer = QUESTION.getCorrectAnswer();
 
         answerSelection();
@@ -93,6 +95,9 @@ public class QuestionActivity extends AppCompatActivity {
                 }
                 else if(selected >= 0 && selected <= 4){
                     i.putExtra("CORRECT",false);
+                    startActivity(i);
+                }
+                if(selected != -1) {
                     startActivity(i);
                 }
             }
