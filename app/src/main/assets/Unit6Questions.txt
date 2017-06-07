@@ -1,16 +1,16 @@
 Unit 6:
 Searching, Sorting, Recursion
 What is the process of defining a method in terms of itself, that is a method that calls itself?
-A1. Encapsulation
-A2. Polymorphism
-A3. Sorting
-A4. Abstraction
-A5. Recursion
-5
+A0. Encapsulation
+A1. Polymorphism
+A2. Sorting
+A3. Abstraction
+A4. Recursion
+4
 What is the value returned by function compareTo() if the invoking string is greater than the string compared?
-A1. zero
-A2. value less than zero
-A3. value greater than zero
-A4. negative one
-A5. None of the mentioned
-3
+A0. zero
+A1. value less than zero
+A2. value greater than zero
+A3. negative one
+A4. None of the mentioned
+2
