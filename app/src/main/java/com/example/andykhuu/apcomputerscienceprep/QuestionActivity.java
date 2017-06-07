@@ -31,8 +31,6 @@ public class QuestionActivity extends AppCompatActivity {
         correctAnswer = QUESTION.getCorrectAnswer();
 
         answerSelection();
-
-
     }
 
     private void answerSelection(){
