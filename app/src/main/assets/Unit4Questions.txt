@@ -7,12 +7,10 @@ A2. int arr[] = new int[5]
 A3. int arr[] = int [5] new
 A4. int arr[] = {1,2,3,4};
 3
-What will this code print?
-int arr[] = new int [5];
-System.out.print(arr);
+What will this code print? int arr[] = new int [5]; System.out.print(arr);
 A0. 0
 A1. value stored in arr[0].
 A2. 00000
-A3. Class name@ hashcode in hexadecimal form
+A3. Class name hashcode in hexadecimal form
 A4. None of the mentioned
 3

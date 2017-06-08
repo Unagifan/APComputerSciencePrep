@@ -2,6 +2,7 @@ package com.example.andykhuu.apcomputerscienceprep;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,6 +18,7 @@ public class SolutionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.solutionlayout_main);
+
         boolean isCorrect = getIntent().getBooleanExtra("CORRECT", false);
 
         image = (ImageView) findViewById(R.id.solutionImageView);
@@ -29,6 +31,10 @@ public class SolutionActivity extends AppCompatActivity {
             image.setImageResource(R.drawable.ic_thumbsdown);
             feedbackText.setText("Incorrect. You are wrong because you chose the wrong answer.");
         }
+
+        //Back button which returns user to unit page
+        Button back = (Button) findViewById(R.id.back);
+
 
     }
 
