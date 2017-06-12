@@ -124,6 +124,7 @@ public class QuestionActivity extends AppCompatActivity {
             }
         });
     }
+
     private void nullBackground(){
         answer0.setBackground(null);
         answer1.setBackground(null);
