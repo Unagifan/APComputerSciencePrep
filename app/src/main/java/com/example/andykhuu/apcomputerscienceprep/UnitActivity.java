@@ -151,5 +151,11 @@ public class UnitActivity extends AppCompatActivity {
 
         designListView();
     }
+
+    @Override
+    public void onBackPressed(){
+        Intent i = new Intent(UnitActivity.this,MainActivity.class);
+        startActivity(i);
+    }
 }
 
