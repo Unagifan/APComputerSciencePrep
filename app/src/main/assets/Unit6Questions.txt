@@ -1,5 +1,6 @@
 Unit 6:
 Searching, Sorting, Recursion
+6
 What is the process of defining a method in terms of itself, that is a method that calls itself?
 A0. Encapsulation
 A1. Polymorphism

@@ -109,6 +109,7 @@ public class QuestionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(QuestionActivity.this, SolutionActivity.class);
+                i.putExtra("UNITID",QUESTION.getUNITID());
                 if(selected ==  correctAnswer){
                     i.putExtra("CORRECT",true);
                     startActivity(i);

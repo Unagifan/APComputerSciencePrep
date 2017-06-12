@@ -18,16 +18,21 @@ import java.io.File;
 
 public class Question implements Parcelable {
 
+    private int UNITID;
     private String question;
     private String[] answers = new String[5];
     private int correctAnswerIndex;
 
     public Question(String question, String answer1, String answer2,
                     String answer3, String answer4,
-                    String answer5, int correctAnswerIndex){
+                    String answer5, int correctAnswerIndex,int UNITID){
+        this.UNITID = UNITID;
         this.question = question;
         this.answers = new String[]{answer1,answer2,answer3,answer4,answer5};
         this.correctAnswerIndex = correctAnswerIndex;
+    }
+    public int getUNITID(){
+        return UNITID;
     }
 
     public String getQuestion(){
@@ -71,6 +76,7 @@ public class Question implements Parcelable {
         pc.writeString(question);
         pc.writeStringArray(answers);
         pc.writeInt(correctAnswerIndex);
+        pc.writeInt(UNITID);
     }
 
     /**
@@ -93,5 +99,6 @@ public class Question implements Parcelable {
         question   = pc.readString();
         answers    = pc.createStringArray();
         correctAnswerIndex = pc.readInt();
+        UNITID = pc.readInt();
     }
 }
