@@ -44,9 +44,9 @@ public class UnitActivity extends AppCompatActivity {
         questions = new ArrayList<>();
 
         //From unitData, convert the given string into question objects and put it into a list of questions.
-        for(int i = 2; i < unitData.size()-1; i+=7){
+        for(int i = 3; i < unitData.size()-1; i+=7){
             Question temp = new Question(unitData.get(i),unitData.get(i+1),unitData.get(i+2)
-                    ,unitData.get(i+3),unitData.get(i+4),unitData.get(i+5),Integer.parseInt(unitData.get(i+6)));
+                    ,unitData.get(i+3),unitData.get(i+4),unitData.get(i+5),Integer.parseInt(unitData.get(i+6)),Integer.parseInt(unitData.get(2)));
             questions.add(temp);
         }
         generateLayout();

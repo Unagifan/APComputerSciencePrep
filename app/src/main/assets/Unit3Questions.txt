@@ -1,5 +1,6 @@
 Unit 3:
 Control Structures
+3
 Each pass through a loop is called a/an
 A0. enumeration
 A1. culmination
