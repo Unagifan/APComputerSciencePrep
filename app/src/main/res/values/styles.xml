@@ -20,6 +20,7 @@
     <!--This is the universal style for the answers in questionLayout-->
     <style name="answerStyle">
         <item name = "android:textSize"> 20sp </item>
+        <item name = "android:textColor">E1536F</item>
         <item name = "android:layout_width"> match_parent </item>
         <item name = "android:layout_height"> 100dp </item>
         <item name = "android:paddingTop">10dp</item>
@@ -29,7 +30,7 @@
     <style name="answerDivider">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">10dp</item>
-        <item name="android:background">#B2B0B0</item>
+        <item name="android:background">#2385E7</item>
     </style>
 
     <!--Thin Divider between question and answers-->
