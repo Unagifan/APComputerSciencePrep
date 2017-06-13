@@ -49,21 +49,21 @@ public class SolutionActivity extends AppCompatActivity {
             }
         });
 
-//        next = (Button) findViewById(R.id.next);
-//        next.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(QuestionManager.getUnansweredQuestions(UnitID) == null){
-//                    Intent i = new Intent(SolutionActivity.this,MainActivity.class);
-//                    startActivity(i);
-//                }
-//                else {
-//                    Intent i = new Intent(SolutionActivity.this, QuestionActivity.class);
-//                    i.putExtra("QUESTION", QuestionManager.getUnansweredQuestions(UnitID).get(0));
-//                    startActivity(i);
-//                }
-//            }
-//        });
+        next = (Button) findViewById(R.id.next);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(QuestionManager.getUnansweredQuestions(UnitID).size() == 0){
+                    Intent i = new Intent(SolutionActivity.this,MainActivity.class);
+                    startActivity(i);
+                }
+                else {
+                    Intent i = new Intent(SolutionActivity.this, QuestionActivity.class);
+                    i.putExtra("QUESTION", QuestionManager.getUnansweredQuestions(UnitID).get(0));
+                    startActivity(i);
+                }
+            }
+        });
 
     }
 
