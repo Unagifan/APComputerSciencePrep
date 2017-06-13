@@ -15,13 +15,13 @@ import java.util.List;
 
 public class QuestionManager{
     private static QuestionManager instance = null;
-    private List<Question> unitZeroUnanswered;
-    private List<Question> unitOneUnanswered;
-    private List<Question> unitTwoUnanswered;
-    private List<Question> unitThreeUnanswered;
-    private List<Question> unitFourUnanswered;
-    private List<Question> unitFiveUnanswered;
-    private List<Question> unitSixUnanswered;
+    private static List<Question> unitZeroUnanswered;
+    private static List<Question> unitOneUnanswered;
+    private static List<Question> unitTwoUnanswered;
+    private static List<Question> unitThreeUnanswered;
+    private static List<Question> unitFourUnanswered;
+    private static List<Question> unitFiveUnanswered;
+    private static List<Question> unitSixUnanswered;
 
     protected QuestionManager() {
         unitZeroUnanswered = convertToQuestions(getUnitData(0,MainActivity.getContext()));
@@ -111,12 +111,72 @@ public class QuestionManager{
                     unitZeroUnanswered.remove(q);
                 }
                 break;
+            case 1:
+                if (unitOneUnanswered.contains(q)) {
+                    unitOneUnanswered.remove(q);
+                }
+                break;
+            case 2:
+                if (unitTwoUnanswered.contains(q)) {
+                    unitTwoUnanswered.remove(q);
+                }
+                break;
+            case 3:
+                if (unitThreeUnanswered.contains(q)) {
+                    unitThreeUnanswered.remove(q);
+                }
+                break;
+            case 4:
+                if (unitFourUnanswered.contains(q)) {
+                    unitFourUnanswered.remove(q);
+                }
+                break;
+            case 5:
+                if (unitFiveUnanswered.contains(q)) {
+                    unitFiveUnanswered.remove(q);
+                }
+                break;
+            case 6:
+                if (unitSixUnanswered.contains(q)) {
+                    unitSixUnanswered.remove(q);
+                }
+                break;
             default:
         }
     }
-
-    public List<Question> getUnitZeroUnanswered(){
+    public static List<Question> getUnansweredQuestions(int i){
+        switch(i) {
+            case 0:
+                return unitZeroUnanswered;
+            case 1:
+                return unitOneUnanswered;
+            case 2:
+                return unitTwoUnanswered;
+            case 3:
+                return unitThreeUnanswered;
+            case 4:
+                return unitFourUnanswered;
+            case 5:
+                return unitFiveUnanswered;
+            case 6:
+                return unitSixUnanswered;
+            default:
+        }
         return unitZeroUnanswered;
     }
+
+    public static List<Question> getUnitZeroUnanswered(){
+        return unitZeroUnanswered;
+    }
+    public static List<Question> getUnitOneUnanswered(){ return unitOneUnanswered;}
+    public static List<Question> getUnitTwoUnanswered(){ return unitTwoUnanswered;}
+    public static List<Question> getUnitThreeUnanswered(){ return unitThreeUnanswered;}
+    public static List<Question> getUnitFourUnanswered(){ return unitFourUnanswered;}
+    public static List<Question> getUnitFiveUnanswered(){ return unitFiveUnanswered;}
+    public static List<Question> getUnitSixUnanswered(){ return unitSixUnanswered;}
+
+
+
+
 
 }

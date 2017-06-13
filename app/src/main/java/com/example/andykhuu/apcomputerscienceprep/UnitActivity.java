@@ -27,12 +27,12 @@ import java.util.List;
 
 public class UnitActivity extends AppCompatActivity {
 
-    private int currentUnitId;
+    private static int currentUnitId;
     private String unitTitle;
     private String unitDescription;
 
     private List<String> unitData;
-    private List<Question> questions;
+    private static List<Question> questions;
 
     private String[] numberOfQuestions;
 
@@ -61,7 +61,7 @@ public class UnitActivity extends AppCompatActivity {
             numberOfQuestions[i] = "Question " + i;
         }
 
-        ArrayAdapter<String> num = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,numberOfQuestions);
+        QuestionListAdapter num = new QuestionListAdapter(UnitActivity.this,numberOfQuestions);
         ListView listView = (ListView) findViewById(R.id.QuestionsList);
         listView.setAdapter(num);
 
@@ -105,6 +105,14 @@ public class UnitActivity extends AppCompatActivity {
     public void onBackPressed(){
         Intent i = new Intent(UnitActivity.this,MainActivity.class);
         startActivity(i);
+    }
+
+    public static List<Question> getQuestions(){
+        return questions;
+    }
+
+    public static int getCurrentUnitID(){
+        return currentUnitId;
     }
 
 }
