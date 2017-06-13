@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.List;
+
 /**
  * Created by frk_alkhuu on 6/5/2017.
  */
@@ -16,6 +18,7 @@ public class SolutionActivity extends AppCompatActivity {
     ImageView image;
     TextView feedbackText;
     Button back;
+    Button next;
     int UnitID;
 
     @Override
@@ -45,6 +48,22 @@ public class SolutionActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+//        next = (Button) findViewById(R.id.next);
+//        next.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(QuestionManager.getUnansweredQuestions(UnitID) == null){
+//                    Intent i = new Intent(SolutionActivity.this,MainActivity.class);
+//                    startActivity(i);
+//                }
+//                else {
+//                    Intent i = new Intent(SolutionActivity.this, QuestionActivity.class);
+//                    i.putExtra("QUESTION", QuestionManager.getUnansweredQuestions(UnitID).get(0));
+//                    startActivity(i);
+//                }
+//            }
+//        });
 
     }
 

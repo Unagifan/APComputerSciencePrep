@@ -18,4 +18,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Return to Unit Page"/>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"/>
 </LinearLayout>
