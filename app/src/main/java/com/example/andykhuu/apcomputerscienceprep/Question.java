@@ -61,6 +61,15 @@ public class Question implements Parcelable {
     }
 
     @Override
+    public boolean equals(Object o){
+        Question temp = (Question) o;
+        if(temp.getQuestion().equals(question)){
+            return true;
+        }
+        return false;
+    }
+
+    @Override
     //Nothing special right here due to no custom objects
     public int describeContents(){
         return 0;

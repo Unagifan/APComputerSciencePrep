@@ -17,6 +17,7 @@ import android.widget.TextView;
 public class QuestionActivity extends AppCompatActivity {
 
     private Question QUESTION;
+    private QuestionManager q;
     private int correctAnswer;
     private int selected;
 
@@ -34,10 +35,15 @@ public class QuestionActivity extends AppCompatActivity {
 
         //Set selected to an unused value
         selected = -1;
+
         //Retrieve Question Object
         QUESTION = getIntent().getParcelableExtra("QUESTION");
+
         //Determine which feedbackText contains the correct answer
         correctAnswer = QUESTION.getCorrectAnswer();
+
+        q = QuestionManager.getInstance();
+
         //Map questions and answers to layout and setup answer selection logic
         answerSelection();
     }
@@ -112,6 +118,8 @@ public class QuestionActivity extends AppCompatActivity {
                 i.putExtra("UNITID",QUESTION.getUNITID());
                 if(selected ==  correctAnswer){
                     i.putExtra("CORRECT",true);
+                    q.removeQuestion(QUESTION,QUESTION.getUNITID());
+                    System.out.println(q.getUnitZeroUnanswered());
                     startActivity(i);
                 }
                 else if(selected >= 0 && selected <= 4){
@@ -124,6 +132,7 @@ public class QuestionActivity extends AppCompatActivity {
             }
         });
     }
+
     private void nullBackground(){
         answer0.setBackground(null);
         answer1.setBackground(null);
