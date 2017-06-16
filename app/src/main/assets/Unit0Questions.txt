@@ -2,16 +2,17 @@ Unit 0:
 Computer Science is blah blah blah, insert filler here jkfljasldfkjkalsdfklasjdflk ajsdkl fjalsdkfj s
 0
 __________ is the brain of a computer.
-A0. Hardware
-A1. CPU
-A2. Memory
-A3 Disk
-A4. Power Button
+ Hardware
+ CPU
+ Memory
+ Disk
+ Power Button
 1
 ___________ translates high-level language program into machine language program.
-A0. An assembler
-A1. A compiler
-A2. CPU
-A3. The operating system
-A4. A programmer
+    An assembler
+    A compiler
+    CPU
+    The operating system
+    A programmer
 1
+

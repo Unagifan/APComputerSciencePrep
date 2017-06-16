@@ -15,3 +15,45 @@ A2. Every comment line must end with a semicolon.
 A3. Every method must end with a semicolon.
 A4. Every class must end with a semicolon.
 1
+What is the result of the following expression? 1 + 2 * 3 + 7 * 2 % 5
+11
+21
+2
+5
+1
+0
+What is the result of the following expression? 26 % 10 % 4 * 3 (can have more)
+6
+10
+21
+5
+8
+0
+What is the result of the following expression? "2 + 2 " + 3 + 4
+"2 2 + 3 4"
+"2 + 2 34"
+11
+15
+“ 4 34”
+1
+Which of the following choices is the correct syntax for declaring a real number variable named 'grade' and initializing its value to 4.0?
+grade = double 4.0;
+int grade : 4.0;
+double grade = 4.0;
+grade = 4;
+4.0 = grade;
+2
+Which of the following is the correct syntax for a method header with parameters?
+public static void example(int x,y) {
+public static void example(x: int, y: int) {
+public static void example(x, y) {
+public static (int x, int y) example() {
+public static void example(int x, int y) {
+4
+The System.out.println command works on many different types of values, including ints and doubles. What is the term for such a method?
+overload
+parameter
+override
+overwrite
+overrate
+0
