@@ -15,3 +15,10 @@ A2. A method with a return type
 A3. A method call
 A4. A return
 0
+Which one of the following is the correct syntax to instantiate a object?
+new int = int new();
+Object o = o new();
+Object o = new Object();
+Object new = make;
+make new object now;()
+2
