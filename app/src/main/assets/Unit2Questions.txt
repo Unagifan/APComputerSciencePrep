@@ -22,5 +22,3 @@ Object o = new Object();
 Object new = make;
 make new object now();
 2
-
-
