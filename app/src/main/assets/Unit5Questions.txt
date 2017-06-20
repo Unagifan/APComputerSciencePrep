@@ -15,3 +15,10 @@ A2. All of the above
 A3. Strings
 A4. None of the mentioned
 2
+Which of the follow is the correct syntax to indicate class Y is a subclass of class Z
+public class Z extends Y
+public class Y extends Z
+public void class Y extends Z
+public void Z extends class Y
+public class Z makes sub class Y
+1

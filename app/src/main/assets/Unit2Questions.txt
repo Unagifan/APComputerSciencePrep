@@ -20,5 +20,7 @@ new int = int new();
 Object o = o new();
 Object o = new Object();
 Object new = make;
-make new object now;()
+make new object now();
 2
+
+

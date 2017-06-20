@@ -57,3 +57,10 @@ override
 overwrite
 overrate
 0
+Consider a method getGrade that accepts an integer representing a student's grade percentage in a course and returns that student's numerical course grade: public static double getGrade(int percentage) {... } The grade can be between 0.0 (failing) and 4.0 (perfect). Which of the following are precondition(s) that are appropriate for this method?
+The parameter's value must be greater than or equal to 0.
+The parameter's value must be greater than or equal to 100.
+The parameter must be a letter grade of 'A', 'B', 'C', or 'D'.
+The parameter can be an integer or a real number.
+The parameter's value must be between 0.0 and 4.0.
+0

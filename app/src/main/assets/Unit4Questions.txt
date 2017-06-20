@@ -15,3 +15,17 @@ A2. 00000
 A3. Class name hashcode in hexadecimal form
 A4. None of the mentioned
 3
+What expression should be used to access the first element of an array of integers called numbers?
+numbers[0]
+numbers[1]
+numbers[100]
+numbers[-1]
+numbers[10]
+0
+Which of the following choices is the correct syntax for declaring/initializing an array of ten integers named a?
+int a[10];
+int[10] a = new int[10];
+int a[10] = new int[10];
+int a make 10;
+int[] a = new int[10];
+4

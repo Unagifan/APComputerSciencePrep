@@ -15,4 +15,17 @@ ___________ translates high-level language program into machine language program
     The operating system
     A programmer
 1
-
+What is another word the computer's memory?
+    CPU
+    Hardware
+    Fan
+    RAM
+    Banana
+3
+What do base do computers think in
+    Decimal
+    Binary
+    Hexadecimal
+    Octadecimal
+    Pentadecimal
+1

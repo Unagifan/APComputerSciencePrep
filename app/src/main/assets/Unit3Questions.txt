@@ -15,3 +15,17 @@ A2. do-while
 A3. no looping process checks the test condition at the end
 A4. if loops
 2
+Which of the following if statement headers uses the correct syntax?
+if (x == y) {
+if [x == 10] {
+if (x equals 42) {
+if (x => y) {
+if x = 10 then {
+1
+Which of the following while loop headers use the correct syntax?
+while(x is equal to 5){}
+while(x equals 5){}
+while(x = 5){}
+while(x == 5){}
+while(5 = to x){}
+3
